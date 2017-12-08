@@ -3,4 +3,4 @@ New evolution document web solution. Combining front end (Angular) and back end 
 
 To test iframe solution copy or download **iframe-example.html**
 
-For api documentation see <a href="http://10.3.67.101:5001/swagger/" target="_blank">swagger</a>
+For api documentation ctrl+click on <a href="http://10.3.67.101:5001/swagger/" target="_blank">swagger</a>
