@@ -24,12 +24,11 @@ I.e.
 
 Remember that the string representation of that field will be displayed so if the path references an object you will have json in the table.
 
-Name column of the resource is allways present as 'Resursnamn' by default.
+The name column of the resource is allways present. The default locale(sv) respresentation is 'Resursnamn'
 
 Example locale:
 
 ```
-json
 {
     "headers": {
         "name": "Resursnamn",
