@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IFrame Example</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta http-Equiv="Cache-Control" Content="no-cache" />
+    <meta http-Equiv="Pragma" Content="no-cache" />
+    <meta http-Equiv="Expires" Content="0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <style>
+        .ifram-container {
+            border: 1px solid #F0F8FF;
+        }
+        
+        .ifram-container iframe {
+            width: 100%
+        }
+    </style>
+</head>
+
+<body class="container">
+
+    <h1 class="text-center">Documentweb iframe exempels</h1>
+    <div class="col-md-8 col-md-offset-2">
+        <h4 class="text-center">All published folders</h4>
+        <div class="ifram-container">
+            <iframe src="http://10.3.67.101:5001?columns=createDate&columns=publishCategory&columns=hid">
+                </iframe>
+        </div>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+        <h4 class="text-center">Published folders with categories 'test', 'publik'</h4>
+        <div class="ifram-container">
+            <iframe src="http://10.3.67.101:5001?columns=createDate&columns=publishCategory&columns=hid&tags=test&tags=publik">
+                </iframe>
+        </div>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+        <h4 class="text-center">Virtual folder with category 'test' and publish type 'all'</h4>
+        <div class="ifram-container">
+            <iframe src="http://10.3.67.101:5001?columns=createDate&columns=publishCategory&columns=hid&category=test&type=all">
+                </iframe>
+        </div>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+        <h4 class="text-center">Virtual folder with category 'test' and publish type 'public'</h4>
+        <div class="ifram-container">
+            <iframe src="http://10.3.67.101:5001?columns=createDate&columns=publishCategory&columns=hid&category=test&type=public">
+                </iframe>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.15/iframeResizer.min.js"></script>
+    <script type="text/javascript">
+        iFrameResize({
+            log: false,
+            heightCalculationMethod: 'lowestElement',
+            resizeFrom: 'child',
+            autoResize: true,
+            checkOrigin: false
+        });
+    </script>
+</body>
