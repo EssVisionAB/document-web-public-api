@@ -10,13 +10,13 @@ For backend api documentation ctrl+click on <a href="http://10.3.67.101:5001/swa
 
 Within this section all the details regarding configuration of the iframe is presented
 
-Columns:
+### Columns:
 
 Any piece of data avaliable within either the Document class or the Folder class is possible to show within an iframe. To add a column to the iframe within the url add:
 
 &columns=COLUMN_NAME
 
-COLUMN_NAME should correspond to the path to the field within the object and it is case sensitive. Also add a localization string for that field within /assets/locale/sv_SE.json in your local IIS site.
+COLUMN_NAME should correspond to the path to the field within the object and it is case sensitive. If not allready present add a localization string for that field in your local IIS site istallation under /wwwroot/assets/i18n/sv.json 
 
 I.e.
 
@@ -24,13 +24,15 @@ I.e.
 
 Remember that the string representation of that field will be displayed so if the path references an object you will have json in the table.
 
-Tags:
+### Tags:
 
 &tags=TAG_NAME
 
 Filter published root folders on their category.
 
-Page Size:
+Example url included in next section.
+
+### Page Size:
 
 The url also allows for configuration of how many items are shown on each page. That is done with the following tag:
 
@@ -42,7 +44,7 @@ Example url:
 
 http://localhost:63285/?url=localhost:8090&tags=internal&tags=external&columns=Name&columns=published&columns=Contact.ZipCode&pagesize=5
 
-Hide meta bar and table header:
+### Hide meta bar and table header:
 
 add parameter &hideMetaBar=true and/or &hideTableHead=true to src string
 
