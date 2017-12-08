@@ -26,7 +26,7 @@ Remember that the string representation of that field will be displayed so if th
 
 The name column of the resource is allways present. The default locale(sv) respresentation is 'Resursnamn'
 
-Example locale:
+Example locale(sv):
 
 ```
 {
@@ -52,7 +52,7 @@ Example locale:
 
 &tags=TAG_NAME
 
-Filter published root folders on their category.
+Filter published root folders on their category (from lookup).
 
 Example url included in next section.
 
@@ -62,7 +62,7 @@ The url also allows for configuration of how many items are shown on each page. 
 
 &pagesize=PAGE_SIZE
 
-Where PAGE_SIZE is an integer and default is 10.
+Where PAGE_SIZE is an integer (default is 10).
 
 Example url:
 
@@ -90,9 +90,9 @@ http://example.domain?category=test&type=all&columns=hid&columns=contact.zipCode
 
 ## Folder published by id:
 
-Display content of folder published by id. Url must contain &folderId={guid} NOTE: If category and type is supplied in url it will be regarded as Virtual and folderId is ignored.
+Display content of folder published by id. Url must contain &folderId={guid} NOTE: If category and type is supplied in url it will be regarded as a virtual and folderId is ignored.
 
 Example url:
 
-http://example.domain?folderId=59830ECD-5674-4AC6-A48B-F0460AC9413D&cocolumns=cotact.zipCode&pagesize=5
+http://example.domain?folderId=59830ECD-5674-4AC6-A48B-F0460AC9413D&cocolumns=contact.zipCode&pagesize=5
 
