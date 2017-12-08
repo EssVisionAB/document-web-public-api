@@ -71,7 +71,7 @@ http://example.domain?tags=internal&tags=external&c&columns=published&columns=co
 
 ### Hide meta bar and table header:
 
-add parameter &hideMetaBar=true and/or &hideTableHead=true to src string
+If you want to hide meta bar or table head, add parameter &hideMetaBar=true and/or &hideTableHead=true to src string
 
 Example url:
 
@@ -80,7 +80,7 @@ http://example.domain?category=test&type=all&pagesize=5&hideMetaBar=true&hideTab
 
 ## Virtual folder:
 
-Display list of documents in published folders with category as root folder name. Url must be extended with category and type, in that case tags are ignored.
+Display a list of documents in all published folders filtered by their category (which is displayed as root folder name). Url must be extended with category and type (the publish type by wich documents are filterd), in that case tags and folderId are ignored.
 
 &category=SOME_CATEGORY (from lookup) &type=PUBLISH_TYPE (all, approved or public)
 
