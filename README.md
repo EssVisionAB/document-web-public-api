@@ -5,7 +5,6 @@ To test the iframe solution copy or download **iframe-example.html** to your loc
 
 If you whant to develop your own front end, see backend api documentation by ctrl+click on <a href="http://10.3.67.101:5001/swagger/" target="_blank">swagger</a>
 
-
 ## Iframe url configuration:
 
 Within this section all the details regarding configuration of the iframe is presented
@@ -27,7 +26,6 @@ Remember that the string representation of that field will be displayed so if th
 The name column of any resource (Document, Folder) is allways present and is not needed in query string. The default locale(sv) respresentation of name is 'Resursnamn'
 
 Example locale(sv):
-
 ```
 {
     "headers": {
@@ -47,7 +45,6 @@ Example locale(sv):
     }
 }
 ```
-
 ### Tags:
 
 &tags=TAG_NAME
@@ -65,11 +62,9 @@ The url also allows for configuration of how many items are shown on each page. 
 Where PAGE_SIZE is an integer (default is 10).
 
 Example:
-
 ```
 <iframe src="http://example.domain?columns=createDate&columns=publishCategory&columns=hid&tags=test&tags=publik" />
 ```
-
 ### Hide meta bar and table header:
 
 If you want to hide meta bar or table head, add parameter hideMetaBar=true and/or hideTableHead=true to query string
