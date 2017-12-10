@@ -64,18 +64,20 @@ The url also allows for configuration of how many items are shown on each page. 
 
 Where PAGE_SIZE is an integer (default is 10).
 
-Example url:
+Example:
 
-http://example.domain?tags=internal&tags=external&c&columns=publishCategory&columns=contact.zipCode&pagesize=5
+```
+<iframe src="http://example.domain?columns=createDate&columns=publishCategory&columns=hid&tags=test&tags=publik" />
+```
 
 ### Hide meta bar and table header:
 
 If you want to hide meta bar or table head, add parameter hideMetaBar=true and/or hideTableHead=true to query string
 
-Example url:
-
-http://example.domain?category=test&type=all&pagesize=5&hideMetaBar=true&hideTableHead=true
-
+Example:
+```
+<iframe src="http://example.domain?category=test&type=all&pagesize=5&hideMetaBar=true&hideTableHead=true" />
+```
 
 ## Virtual folder:
 
@@ -83,16 +85,18 @@ Display a list of documents in all published folders filtered by their category 
 
 &category=SOME_CATEGORY (from lookup) &type=PUBLISH_TYPE (all, approved or public)
 
-Example url:
-
-http://example.domain?category=test&type=all&columns=hid&columns=contact.zipCode&pagesize=5
-
+Example:
+```
+<iframe src="http://example.domain?category=test&type=all&columns=hid&columns=contact.zipCode&pagesize=5" />
+```
 
 ## Folder published by id:
 
 Display content of folder published by id. query string must contain folderId={guid} NOTE: If category and type is supplied it will be regarded as a virtual and folderId is ignored.
 
-Example url:
+Example:
+```
+<iframe src="http://example.domain?folderId=59830ECD-5674-4AC6-A48B-F0460AC9413D&cocolumns=contact.zipCode&pagesize=5" />
+```
 
-http://example.domain?folderId=59830ECD-5674-4AC6-A48B-F0460AC9413D&cocolumns=contact.zipCode&pagesize=5
 
