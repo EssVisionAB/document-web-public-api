@@ -12,7 +12,7 @@ Within this section all the details regarding configuration of the iframe is pre
 
 ### Columns:
 
-Any piece of data avaliable within either the Document class or the Folder class is possible to show within an iframe. To add a column to the iframe within the url add:
+Any piece of data avaliable within either the Document class or the Folder class is possible to show within an iframe. To add a column to the iframe add it as parameter to the query string part of url:
 
 &columns=COLUMN_NAME
 
@@ -23,8 +23,8 @@ I.e.
 &columns=contact.zipCode will return the contacts zipcode
 
 Remember that the string representation of that field will be displayed so if the path references an object you will have json in the table.
-
-The name column of the resource is allways present. The default locale(sv) respresentation is 'Resursnamn'
+ 
+The name column of any resource (Document, Folder) is allways present and is not needed in query string. The default locale(sv) respresentation of name is 'Resursnamn'
 
 Example locale(sv):
 
@@ -52,7 +52,7 @@ Example locale(sv):
 
 &tags=TAG_NAME
 
-Filter published root folders on their category (from lookup).
+Filter published root folders on their publish category (from lookup).
 
 Example url included in next section.
 
@@ -60,17 +60,17 @@ Example url included in next section.
 
 The url also allows for configuration of how many items are shown on each page. That is done with the following tag:
 
-&pagesize=PAGE_SIZE
+&pageSize=PAGE_SIZE
 
 Where PAGE_SIZE is an integer (default is 10).
 
 Example url:
 
-http://example.domain?tags=internal&tags=external&c&columns=published&columns=contact.zipCode&pagesize=5
+http://example.domain?tags=internal&tags=external&c&columns=publishCategory&columns=contact.zipCode&pagesize=5
 
 ### Hide meta bar and table header:
 
-If you want to hide meta bar or table head, add parameter &hideMetaBar=true and/or &hideTableHead=true to src string
+If you want to hide meta bar or table head, add parameter hideMetaBar=true and/or hideTableHead=true to query string
 
 Example url:
 
@@ -79,7 +79,7 @@ http://example.domain?category=test&type=all&pagesize=5&hideMetaBar=true&hideTab
 
 ## Virtual folder:
 
-Display a list of documents in all published folders filtered by their category (which is displayed as root folder name). Url must be extended with category and type (the publish type by wich documents are filterd), in that case tags and folderId are ignored.
+Display a list of documents in all published folders filtered by their category (which is displayed as root folder name). Query string must be extended with category and type (the publish type by wich documents are filterd), in that case tags and folderId are ignored.
 
 &category=SOME_CATEGORY (from lookup) &type=PUBLISH_TYPE (all, approved or public)
 
@@ -90,7 +90,7 @@ http://example.domain?category=test&type=all&columns=hid&columns=contact.zipCode
 
 ## Folder published by id:
 
-Display content of folder published by id. Url must contain &folderId={guid} NOTE: If category and type is supplied in url it will be regarded as a virtual and folderId is ignored.
+Display content of folder published by id. query string must contain folderId={guid} NOTE: If category and type is supplied it will be regarded as a virtual and folderId is ignored.
 
 Example url:
 
