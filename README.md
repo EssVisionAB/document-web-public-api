@@ -71,7 +71,7 @@ If you want to hide meta bar or table head, add parameter hideMetaBar=true and/o
 
 Example:
 ```
-<iframe src="http://example.domain?category=test&type=all&pagesize=5&hideMetaBar=true&hideTableHead=true" />
+<iframe src="http://example.domain?pagesize=5&hideMetaBar=true&hideTableHead=true" />
 ```
 
 ## Virtual folder:
