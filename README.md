@@ -63,7 +63,7 @@ Where PAGE_SIZE is an integer (default is 10).
 
 Example:
 ```
-<iframe src="http://example.domain?pagesize=5&columns=createDate&columns=publishCategory&columns=hid&tags=test&tags=publik" />
+<iframe src="http://example.domain?pagesize=5&tags=test&tags=publik&columns=createDate&columns=publishCategory&columns=hid" />
 ```
 ### Hide meta bar and table header:
 
