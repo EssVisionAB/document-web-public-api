@@ -3,7 +3,7 @@
 
 To test the iframe solution copy or download **iframe-example.html** to your local computor and just double click on it.
 
-If you whant to develop your own front end, see backend api documentation by ctrl+click on <a href="http://10.3.67.101:5001/swagger/" target="_blank">swagger</a>
+If you whant to develop your own front end, see backend api documentation by ctrl+click on <a href="http://31.216.227.251:5001/swagger/" target="_blank">swagger</a>
 
 ## Iframe url configuration:
 
