@@ -91,7 +91,7 @@ Display content of folder published by id. query string must contain folderId={g
 
 Example:
 ```
-<iframe src="http://example.domain?folderId=59830ECD-5674-4AC6-A48B-F0460AC9413D&ccolumns=contact.zipCode&pagesize=5" />
+<iframe src="http://example.domain?folderId=59830ECD-5674-4AC6-A48B-F0460AC9413D&columns=contact.zipCode&pagesize=5" />
 ```
 
 
