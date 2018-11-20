@@ -1,5 +1,5 @@
 # document-web-public-api
-### Evolution document web solution. Combining front end (Angular 5) and backend (Asp.New.Core) in one project.
+### Evolution document web solution. Combining front end (Angular 5) and backend (Asp.Net.Core) in one project.
 
 To test the iframe solution copy or download **iframe-example.html** to your local computor and just double click on it.
 
