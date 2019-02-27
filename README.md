@@ -1,5 +1,5 @@
 # Evolution Document Web (English)
-A swedish translation av this text can be found at the end of the english text
+A swedish translation av this text can be found at the bottom of this file
 ## document-web-public-api
 ### Evolution document web solution. Combining front-end (Angular 5) and back-end (Asp.Net.Core) in one project.
 
