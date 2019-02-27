@@ -18,7 +18,7 @@ It's possible to configure wich columns to be shown i folder and document lists.
 
 &columns=COLUMN_NAME
 
-COLUMN_NAME should correspond to the path of the field within the object and is case sensitive. If not allready present add a localization string for that field in your local IIS site istallation under /wwwroot/assets/i18n/sv.json. This is also where you change display name if you whant a column name than provided by default. 
+COLUMN_NAME should correspond to the path of the field within the object and is case sensitive. If not already present add a localization string for that field in your local IIS site installation under /wwwroot/assets/i18n/sv.json. This is also where you change display name if you whant a column name than provided by default. 
 
 Example:
 &columns=createDate will add the create date as a column to lists.
