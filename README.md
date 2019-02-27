@@ -1,8 +1,9 @@
-# Evolution Document Web
+# Evolution Document Web (English)
+A swedish translation av this text can be found at the end of the english text
 ## document-web-public-api
 ### Evolution document web solution. Combining front-end (Angular 5) and back-end (Asp.Net.Core) in one project.
 
-Evolution Document Web is a public API for Evolution that combines a frontend user interface for customers who wants a ready to use web interface that can be used directly or implemented as iframes in their already existing web sites and a backend for customers who want to develop their own customized frontend.
+Evolution Document Web is a public API for Evolution that combines a front-end user interface for customers who wants a ready to use web interface that can be used directly or implemented as iframes in their already existing web sites and a back-end for customers who want to develop their own customized frontend.
 
 ## Back-end
 If you want to develop your own front-end, see back-end api documentation by ctrl+click on <a href="http://31.216.227.251:5001/swagger/" target="_blank">swagger</a>.
@@ -100,7 +101,7 @@ Example URL:
 ```
 
 #### Page Size:
-The url also allows for configuration of how many items are shown on each page. parameter to the query string part of url:
+The url also allows for configuration of how many items are shown on each page. Add parameter to the query string part of the URL:
 
 &pageSize=PAGE_SIZE
 
@@ -124,7 +125,136 @@ This is en example showing folders and documents published with the category "Po
 
 Example URL:
 ```
+<iframe src="http://example.domain?columns=createDate&columns=version&tags=Policies&hideMetaBar=true&pagesize=5" />
+```
+# Evolution Document Web (Swedish)
+## document-web-public-api
+### Evolution Document Web. Kombinerad lösning med front-end (Angular 5) och back-end (Asp.Net.Core) i ett och samma projekt.
+
+Evolution Document Web är ett publikt API till Evolution som kombinerar ett front-end användargränssnitt för kunder som vill använda ett färdigt webbgränssnitt som kan användas direkt eller implementerat som iframes på sin befintliga webbplats och ett back-end API för kunder som vill utveckla sitt eget anpassade användargränssnitt.
+
+## Back-end
+Om du vill utveckla ditt eget användargränssnitt, se back-end API-dokumentationen genom ctrl+click på <a href="http://31.216.227.251:5001/swagger/" target="_blank">swagger</a>.
+
+## Front-end
+för att testa det fördiga användargränssnittet som en iframe kopiera eller ladda ned **iframe-example.html** till din dator och dubbelklicka på filen.
+
+### Iframe URL-konfiguration:
+Användargränssnittet kan anpassas genom att lägga till parametrar till URL:en. I detta avsnitt behandlas de konfigurationsmöjligheter som finns.
+
+#### Kolumner:
+Det är möjligt att konfigurera vilka kolumner som ska visas i mapp- och dokumentlistor. All information som finns i mapp- och dokumentobjekten kan användas för att visas som kolumner i en iframe. För att lägga till en kolumn i en iframe lägg till den som en parameter till URL:en:
+
+&columns=COLUMN_NAME
+
+COLUMN_NAME ska motsvara fältnamnet för ett objekt och är skiftlägeskänsligt (case sensitive). Om fältnamnet inte redan finns kan det läggas till i installationen på webbservern (IIS) under /wwwroot/assets/i18n/sv.json. Det är även här som man kan ändra visningsnamnet för kolumnen om så önskas. 
+
+Exempel:
+&columns=createDate lägger till skapaddatum som en kolumn i dokumentlistor.
+
+Namnkolumnen (mappnamn/dokumentnamn) finns alltid med och behöver inte läggas till som en parameter. Defaultnamnet for denna kolumn är 'Resursnamn'.
+
+Exempel locale(sv):
+```
+{
+    "headers": {
+        "name": "Resursnamn",
+        "publishCategory": "Kategori",
+        "publishType": "Publiceringstyp",
+        "unitCode": "Enhetskod",
+        "createDate": "Skapad datum",
+        "version": "Version",
+        "hid": "Hid",
+        "contact": {
+            "name": "Kontaktnamen",
+            "address": "Gatuadress",
+            "zipCode": "Postnummer",
+            "region": "Ort"
+        }
+    }
+}
+```
+
+Exempel URL:
+```
+<iframe src="http://example.domain?columns=createDate&columns=version" />
+```
+#### Taggar:
+Parametern tags används för att filtrera vilka mappar som visas beroende på vilken kategori som mappen är publicerad med i Evolutions klient. För att filtrera mapparna lägg till parametern till URL:en:
+
+&tags=TAG_NAME
+
+TAG_NAME ska motsvara kategorin som en eller flera mappar är publicerad med i Evolution.
+
+Exempel:
+&tags=Policies kommer göra att endast mappar publicerade med kategorin "Policies" visas.
+
+Exempel:
+&tags=Policies&tags=Protokoll kommer göra att endast mappar publicerade med kategorin "Policies" eller kategorin "Protokoll" visas.
+
+Example URL:
+```
+<iframe src="http://example.domain?tags=Policiestags=Protokoll" />
+```
+
+#### Virtuell mapp:
+Som ett alternativ till att visa mappstrukturer för en viss kategori av publicerade mappar kan man välja att publicera en rak lista på dokument som ligger i mappar publicerade med en viss kategori. Detta görs med parametern category istället för parametern tags. När parametern category används behöver man även ange parametern type för att ange vilken typ av dokument som ska visas; alla, godkända gällande dokument eller allmänna handlingar (all, approved, public). För att filtrera dokument och visa en rak lista på dessa lägg till parametrarna till URL:en:
+
+&category=SOME_CATEGORY &type=PUBLISH_TYPE (all, approved or public)
+
+SOME_CATEGORY ska motsvara kategorin en eller flera mappar är publicerade med i Evolution och PUBLISH_TYPE ska vara antingen all, approved eller public för att motsvara vilken typ av dokument som ska visas. I virtuella mappar behöver type vara med som parameter eftersom olika mappar i Evolution som publicerats med samma kategori kan ha olika typ angiven.
+
+Example:
+&category=Policies&type=approved kommer visa alla dokument i mappar publicerade med kategorin "Policies" som är godkända och inom sin giltighetstid. 
+
+OBS: Om parametern kategori används kan inte parametrarna tags eller folderId användas samtidigt.
+
+Exempel URL:
+```
+<iframe src="http://example.domain?category=Policies&type=approved" />
+```
+
+#### Mapp publicerad med mappid:
+Parametern folderId används om man vill visa dokument för en viss mapp baserat på mappens id (istället för kategori). För att filtrera dokument publicerade i en specifik mapp och visa en rak lista på dessa lägg till parametern till URL:en:
+
+&folderId={guid}
+
+{guid} ska motsvara den publicerade mappens id. Mappens id visas i publiceringsdialogen i Evolutions klient.
+
+OBS: Om parametrarna category och type är med i URL:en kommer det hanteras som en virtuell mapp och folderId ignoreras.
+
+Exempel URL:
+```
+<iframe src="http://example.domain?folderId=59830ECD-5674-4AC6-A48B-F0460AC9413D" />
+```
+
+#### Sidlängd:
+Det går också att konfigurera hur många mappar/dokument som ska visas på varje sida. För att ange detta lägg till parametern till URL:en:
+
+&pageSize=PAGE_SIZE
+
+PAGE_SIZE motsvarar antalet poster som ett heltal (default är 10).
+
+Exempel:
+```
+<iframe src="http://example.domain?pagesize=5" />
+```
+#### Dölja huvudrubrik och kolumnrubriker:
+Om du vill dölja huvudrubriken (den publicerade rotmappens namn) eller kolumnrubriker, lägg till parametrarna hideMetaBar=true respektive hideTableHead=true till URL:en:
+
+Exempel:
+```
+<iframe src="http://example.domain?hideMetaBar=true&hideTableHead=true" />
+```
+
+### Exempel på URL som kombinerar multipla parametrar:
+Detta är ett exempel på en URL som visar mappar och dokument publicerade med kategorin "Policies". I listan visas kolumnrubrikerna skapaddatum och version. Huvudrubriken är dold och listan visar 5 poster (mappar/dokument).
+
+Exempel URL:
+```
 <iframe src="http://example.domain?columns=createDate&columns=version&&tags=Policies&hideMetaBar=true&pagesize=5" />
 ```
+
+
 
 
