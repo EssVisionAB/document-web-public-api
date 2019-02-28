@@ -113,7 +113,10 @@ Example:
 ```
 #### Hide meta bar and table header:
 
-If you want to hide meta bar (published root folder name) or table head (table column headers), add parameter hideMetaBar=true and/or hideTableHead=true to query string
+If you want to hide meta bar (published root folder name) or table head (table column headers), add the parameters to the query string:
+
+&hideMetaBar=true
+&hideTableHead=true
 
 Example:
 ```
@@ -240,7 +243,10 @@ Exempel:
 <iframe src="http://example.domain?pagesize=5" />
 ```
 #### Dölja huvudrubrik och kolumnrubriker:
-Om du vill dölja huvudrubriken (den publicerade rotmappens namn) eller kolumnrubriker, lägg till parametrarna hideMetaBar=true respektive hideTableHead=true till URL:en:
+Om du vill dölja huvudrubriken (den publicerade rotmappens namn) eller kolumnrubriker, lägg till parametrarna till URL:en:
+
+&hideMetaBar=true
+&hideTableHead=true
 
 Exempel:
 ```
