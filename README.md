@@ -66,7 +66,7 @@ Example:
 
 Example URL:
 ```
-<iframe src="http://example.domain?tags=Policiestags=Protocols" />
+<iframe src="http://example.domain?tags=Policies&tags=Protocols" />
 ```
 
 #### Virtual folder:
@@ -194,7 +194,7 @@ Exempel:
 
 Example URL:
 ```
-<iframe src="http://example.domain?tags=Policiestags=Protokoll" />
+<iframe src="http://example.domain?tags=Policies&tags=Protokoll" />
 ```
 
 #### Virtuell mapp:
