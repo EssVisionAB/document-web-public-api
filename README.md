@@ -72,7 +72,8 @@ Example URL:
 #### Virtual folder:
 In addition to tags, as shown in the tags section, which filters folders and documents from the root folder down, the category parameter can be used to show all documents in a single list that is located in any folder published with a specific category. When the category parameter is used the parameter type must also be included as a parameter to the URL. To filter the result and show documents as a single list add it as parameter to the query string part of url:
 
-&category=SOME_CATEGORY &type=PUBLISH_TYPE (all, approved or public)
+&category=SOME_CATEGORY<br>
+&type=PUBLISH_TYPE (all, approved or public)
 
 SOME_CATEGORY should correspond to the category one or more folders is published with in Evolution and PUBLISH_TYPE should be either all, approved or public to correspond to what types of documents the list should include. In virtual folders type must be included because multiple folders with the same category can be published with different types.
 
@@ -115,7 +116,7 @@ Example:
 
 If you want to hide meta bar (published root folder name) or table head (table column headers), add the parameters to the query string:
 
-&hideMetaBar=true
+&hideMetaBar=true<br>
 &hideTableHead=true
 
 Example:
@@ -203,7 +204,8 @@ Example URL:
 #### Virtuell mapp:
 Som ett alternativ till att visa mappstrukturer för en viss kategori av publicerade mappar kan man välja att publicera en rak lista på dokument som ligger i mappar publicerade med en viss kategori. Detta görs med parametern category istället för parametern tags. När parametern category används behöver man även ange parametern type för att ange vilken typ av dokument som ska visas; alla, godkända gällande dokument eller allmänna handlingar (all, approved, public). För att filtrera dokument och visa en rak lista på dessa lägg till parametrarna till URL:en:
 
-&category=SOME_CATEGORY &type=PUBLISH_TYPE (all, approved or public)
+&category=SOME_CATEGORY<br>
+&type=PUBLISH_TYPE (all, approved or public)
 
 SOME_CATEGORY ska motsvara kategorin en eller flera mappar är publicerade med i Evolution och PUBLISH_TYPE ska vara antingen all, approved eller public för att motsvara vilken typ av dokument som ska visas. I virtuella mappar behöver type vara med som parameter eftersom olika mappar i Evolution som publicerats med samma kategori kan ha olika typ angiven.
 
@@ -245,7 +247,7 @@ Exempel:
 #### Dölja huvudrubrik och kolumnrubriker:
 Om du vill dölja huvudrubriken (den publicerade rotmappens namn) eller kolumnrubriker, lägg till parametrarna till URL:en:
 
-&hideMetaBar=true
+&hideMetaBar=true<br>
 &hideTableHead=true
 
 Exempel:
