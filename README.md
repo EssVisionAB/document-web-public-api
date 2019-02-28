@@ -137,7 +137,7 @@ Evolution Document Web är ett publikt API till Evolution som kombinerar ett fro
 Om du vill utveckla ditt eget användargränssnitt, se back-end API-dokumentationen genom ctrl+click på <a href="http://31.216.227.251:5001/swagger/" target="_blank">swagger</a>.
 
 ## Front-end
-för att testa det fördiga användargränssnittet som en iframe kopiera eller ladda ned **iframe-example.html** till din dator och dubbelklicka på filen.
+För att testa det fördiga användargränssnittet som en iframe kopiera eller ladda ned **iframe-example.html** till din dator och dubbelklicka på filen.
 
 ### Iframe URL-konfiguration:
 Användargränssnittet kan anpassas genom att lägga till parametrar till URL:en. I detta avsnitt behandlas de konfigurationsmöjligheter som finns.
