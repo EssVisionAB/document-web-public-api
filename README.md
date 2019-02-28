@@ -152,7 +152,7 @@ COLUMN_NAME ska motsvara fältnamnet för ett objekt och är skiftlägeskänslig
 Exempel:
 &columns=createDate lägger till skapaddatum som en kolumn i dokumentlistor.
 
-Namnkolumnen (mappnamn/dokumentnamn) finns alltid med och behöver inte läggas till som en parameter. Defaultnamnet for denna kolumn är 'Resursnamn'.
+Namnkolumnen (mappnamn/dokumentnamn) finns alltid med och behöver inte läggas till som en parameter. Defaultnamnet för denna kolumn är 'Resursnamn'.
 
 Exempel locale(sv):
 ```
