@@ -6,7 +6,7 @@ A swedish translation av this text can be found at the bottom of this file
 Evolution Document Web is a public API for Evolution that combines a front-end user interface for customers who wants a ready to use web interface that can be used directly or implemented as iframes in their already existing web sites and a back-end for customers who want to develop their own customized frontend.
 
 ## Back-end
-If you want to develop your own front-end, see back-end api documentation by ctrl+click on <a href="https://evolution-document-web.sokigohosting.com/swagger/index.html" target="_blank">swagger</a>.
+If you want to develop your own front-end, see back-end api documentation by ctrl+click on <a href="https://demo-evolution-document-web.sokigohosting.com/swagger/index.html" target="_blank">swagger</a>.
 
 ## Front-end
 To test the iframe solution copy or download **iframe-example.html** to your local computor and just double click on it.
