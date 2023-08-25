@@ -138,7 +138,7 @@ Example URL:
 Evolution Document Web är ett publikt API till Evolution som kombinerar ett front-end användargränssnitt för kunder som vill använda ett färdigt webbgränssnitt som kan användas direkt eller implementerat som iframes på sin befintliga webbplats och ett back-end API för kunder som vill utveckla sitt eget anpassade användargränssnitt.
 
 ## Back-end
-Om du vill utveckla ditt eget användargränssnitt, se back-end API-dokumentationen genom ctrl+click på <a href="http://31.216.227.251:5001/swagger/" target="_blank">swagger</a>.
+Om du vill utveckla ditt eget användargränssnitt, se back-end API-dokumentationen genom ctrl+click på <a href="https://demo-evolution-document-web.sokigohosting.com/swagger/index.html" target="_blank">swagger</a>.
 
 ## Front-end
 För att testa det fördiga användargränssnittet som en iframe kopiera eller ladda ned **iframe-example.html** till din dator och dubbelklicka på filen.
