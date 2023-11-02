@@ -131,6 +131,15 @@ Example URL:
 ```
 <iframe src="http://example.domain?columns=createDate&columns=version&tags=Policies&hideMetaBar=true&pagesize=5" />
 ```
+
+### Show link to Evolution web:
+If you want to show a link to a document in Evolution web add 'showLink=true' to the query string
+
+Example:
+```
+<iframe src="http://example.domain?showLink=true" />
+```
+
 # Evolution Document Web (Swedish)
 ## document-web-public-api
 ### Evolution Document Web. Kombinerad lösning med front-end (Angular 5) och back-end (Asp.Net.Core) i ett och samma projekt.
@@ -263,6 +272,13 @@ Exempel URL:
 <iframe src="http://example.domain?columns=createDate&columns=version&&tags=Policies&hideMetaBar=true&pagesize=5" />
 ```
 
+### Visa länk till Evolution web:
+Om du vill visa en länk fär att gå till ett dokument i Evolution web, lägg till 'showLink=true' till URL:en
+
+Exempel URL:
+```
+<iframe src="http://example.domain?showLink=true" />
+```
 
 
 
