@@ -132,8 +132,8 @@ Example URL:
 <iframe src="http://example.domain?columns=createDate&columns=version&tags=Policies&hideMetaBar=true&pagesize=5" />
 ```
 
-### Show link to Evolution web:
-If you want to show a link to a document in Evolution web add 'showLink=true' to the query string
+### Show link to Evolution Webb:
+If you want to show a link to a document in Evolution Webb add 'showLink=true' to the query string
 
 Example:
 ```
@@ -272,8 +272,8 @@ Exempel URL:
 <iframe src="http://example.domain?columns=createDate&columns=version&&tags=Policies&hideMetaBar=true&pagesize=5" />
 ```
 
-### Visa länk till Evolution web:
-Om du vill visa en länk fär att gå till ett dokument i Evolution web, lägg till 'showLink=true' till URL:en
+### Visa länk till Evolution Webb:
+Om du vill visa en länk fär att gå till ett dokument i Evolution Webb, lägg till 'showLink=true' till URL:en
 
 Exempel URL:
 ```
