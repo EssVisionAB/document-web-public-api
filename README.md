@@ -273,7 +273,7 @@ Exempel URL:
 ```
 
 ### Visa länk till Evolution Webb:
-Om du vill visa en länk fär att gå till ett dokument i Evolution Webb, lägg till 'showLink=true' till URL:en
+Om du vill visa en länk för att gå till ett dokument i Evolution Webb, lägg till 'showLink=true' till URL:en
 
 Exempel URL:
 ```
