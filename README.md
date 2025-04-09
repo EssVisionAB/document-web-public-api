@@ -38,7 +38,7 @@ Example locale(sv):
         "version": "Version",
         "hid": "Hid",
         "contact": {
-            "name": "Kontaktnamen",
+            "name": "Kontaktnamnen",
             "address": "Gatuadress",
             "zipCode": "Postnummer",
             "region": "Ort"
