@@ -38,7 +38,7 @@ Example locale(sv):
         "version": "Version",
         "hid": "Hid",
         "contact": {
-            "name": "Kontaktnamnen",
+            "name": "Kontaktnamn",
             "address": "Gatuadress",
             "zipCode": "Postnummer",
             "region": "Ort"
@@ -179,7 +179,7 @@ Exempel locale(sv):
         "version": "Version",
         "hid": "Hid",
         "contact": {
-            "name": "Kontaktnamen",
+            "name": "Kontaktnamn",
             "address": "Gatuadress",
             "zipCode": "Postnummer",
             "region": "Ort"
